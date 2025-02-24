@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenzin's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- AOS CSS for animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Smooth Scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Dark mode styles */
+        body {
+            background-color: #1e1e1e; /* Dark background */
+            color: #e0e0e0; /* Light text color */
+        }
+
+        .dark-mode {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        /* Navbar styles */
+        .navbar-dark .navbar-brand {
+            color: #f0f0f0;
+        }
+
+        .navbar-dark .nav-link {
+            color: #f0f0f0;
+        }
+
+        /* Hero section */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(to right, #282c34, #444444); /* Dark gradient background */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #282c34;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #f0f0f0;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #007bff;
+        }
+
+        /* Card styles */
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            background-color: #333; /* Dark card background */
+            color: #e0e0e0; /* Light text */
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            color: #4a90e2;
+        }
+
+        /* Project images */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        /* General styles */
+        h2 {
+            color: #4a90e2;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: #4a90e2;
+            border-color: #4a90e2;
+        }
+
+        .btn-primary:hover {
+            background-color: #357ABD;
+            border-color: #357ABD;
+        }
+
+        /* Profile picture styles */
+        .profile-picture {
+            width: 200px; /* Set the desired width */
+            height: 200px; /* Set the same height to maintain the circle */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 50%; /* Makes the image a perfect circle */
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Tenzin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="modeToggle" class="btn btn-outline-light">Toggle Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h1 class="display-4">Hi, I'm Tenzin</h1>
+            <p class="lead">Expert in System Development, Networking, Linux Administration, Hardware, and Programming.</p>
+            <img src="/html/pic/WhatsApp Image 2024-08-12 at 04.38.47_f8690996.jpg" alt="Tenzin" class="img-fluid rounded-circle profile-picture">
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>About Me</h2>
+            
+            <p>My name is Tenzin Nidup. I graduated from Jigme Namgyal Engineering College, located in Dewathang, SamdrupJongkhar, where I served as the class representative and IT maintenance coordinator. During my time there, I developed strong leadership and problem-solving skills, which allowed me to contribute effectively to both academic and technical initiatives within the institution.</p>
+        
+            <p>I am a dedicated IT professional with extensive experience in system development, networking, Linux administration, hardware management, and programming. My areas of expertise range from building robust applications and managing complex IT infrastructures to implementing network security protocols. My hands-on approach and analytical mindset enable me to handle diverse challenges and ensure seamless operations.</p>
+
+            <p>My passion for technology drives me to continuously expand my knowledge and skills. I am always eager to learn and adopt new technologies, keeping up with industry trends to stay ahead in the field. This drive for excellence has equipped me to deliver high-quality, user-focused solutions that not only meet but often exceed organizational needs. Whether it's solving complex IT problems or enhancing system performance, I am committed to providing reliable and innovative solutions that support business objectives.</p>
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="list-unstyled">
+                <li><i class="fas fa-check"></i> Python Programming</li>
+                <li><i class="fas fa-check"></i> Java Programming</li>
+                <li><i class="fas fa-check"></i> JavaScript Development</li>
+                <li><i class="fas fa-check"></i> Linux Administration</li>
+                <li><i class="fas fa-check"></i> Networking & Security</li>
+                <li><i class="fas fa-check"></i> Hardware Management</li>
+                <li><i class="fas fa-check"></i> Ethical Hacking</li>
+                <li><i class="fas fa-check"></i> Network Data Analysis</li>
+                <li><i class="fas fa-check"></i> Frontend Developer</li>
+                <li><i class="fas fa-check"></i> Web Technology Development</li>
+                <li><i class="fas fa-check"></i> Database Management System</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul class="list-unstyled">
+                <li>System Development - 3 years</li>
+                <li>Networking - 2 years</li>
+                <li>Linux Administration - 2 years</li>
+                <li>Hardware Support - 1 year</li>
+                <li>Programming - 4 years</li>
+                <li>CCNA - 2 years</li>
+                <li>CyberSecurity - 2 years</li>
+                <li>Ethical Hacking - 2 years</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/html/pic/Programming-Hero_Web_0.jpg" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Expert in Programming</h5>
+                            <p class="card-text">Specializing in languages like Python, Java, and JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/html/pic/learncodefaster-1280x720.jpg" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Networking Expertise</h5>
+                            <p class="card-text">Skills in configuring and managing network infrastructures.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="/html/pic/systems-development-life-cycle-toolshero.jpg" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Systems Development</h5>
+                            <p class="card-text">Experience in building efficient systems for various applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="list-unstyled">
+                <li>Diploma of Technology in Information Technology - Jigme Namgyal Engineering College, Dewathang, SamdrupJongkhar</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul class="list-unstyled">
+                <li>Certified Python Programmer</li>
+                <li>Linux Administration Certification</li>
+                <li>Network Security Certified</li>
+                <li>CCNA Certified</li>
+                <li>Ethical Hacking Certified</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section text-center" data-aos="fade-up" data-aos-duration="1000">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you’d like to reach out, feel free to connect with me:</p>
+            <ul class="list-unstyled">
+                <li>Phone: +975-17740150</li>
+                <li>Email: <a href="tenzinnidupa17@gmail.com">tenzinnidupa17@gmail.com</a></li>
+                <li>Address: Gelephu, Sarpang, Bhutan</li>
+                <li>Graduation: Jigme Namgyal Engineering College, Dewathang, SamdrupJongkhar</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Tenzin Nidup | <a href="https://github.com/Tenzy-Zv" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/tenzin-nidup-6b37b8307" target="_blank">LinkedIn</a></p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AOS JS for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        const modeToggle = document.getElementById('modeToggle');
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+
+</html>

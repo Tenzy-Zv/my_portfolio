@@ -1,0 +1,55 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode Styles */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #0f81c4, #6610f2);
+    color: white;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #0a4281;
+    color: white;
+}
+
+/* Social Media Icons */
+.fa {
+    margin: 0 10px;
+    font-size: 24px;
+    color: white;
+}
+.skills-section {
+    padding: 60px 0;
+}
+
+.skills-section h2 {
+    margin-bottom: 30px;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
